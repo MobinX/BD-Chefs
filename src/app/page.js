@@ -2,6 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>bd checfs</main>
+    <div className="bg-gray-100 w-full pt-9  h-full min-w-full">
+      
+    </div>
   );
 }

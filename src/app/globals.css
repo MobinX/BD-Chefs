@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body,html{
+  height: 100vh;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,18 +20,19 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+ 
+}
+
+@layer components{
+ .btnx-ghost{
+  @apply btn btn-ghost hover:text-[#cc0c62]
+ }
+ .row{
+  @apply flex flex-row justify-around space-x-3
+ }  
+ .col{
+  @apply flex flex-col justify-around space-y-3
+ }
 }
