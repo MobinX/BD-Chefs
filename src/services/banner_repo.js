@@ -1,6 +1,6 @@
 
 import { getCookie } from './cookie_utils.js';
-import { bannerUri } from './app_const.js';
+import { bannerUri } from '@/app_const.js';
 
 const getBannerList = async () => {
   const headers = {

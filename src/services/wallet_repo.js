@@ -1,4 +1,4 @@
-import { walletTransactionUri, loyaltyTransactionUri, loyaltyPointTransferUri, addFundUri, walletBonusUri, walletAccessToken } from './app_const.js';
+import { walletTransactionUri, loyaltyTransactionUri, loyaltyPointTransferUri, addFundUri, walletBonusUri, walletAccessToken } from '@/app_const.js';
 import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',

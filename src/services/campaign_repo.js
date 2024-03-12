@@ -1,4 +1,4 @@
-import { basicCampaignUri, basicCampaignDetailsUri, itemCampaignUri } from './app_const.js';
+import { basicCampaignUri, basicCampaignDetailsUri, itemCampaignUri } from '@/app_const.js';
 import { getCookie } from './cookie_utils.js';
 
 const headers = {

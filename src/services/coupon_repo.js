@@ -1,4 +1,4 @@
-import { couponUri, restaurantWiseCouponUri, couponApplyUri } from './app_const.js';
+import { couponUri, restaurantWiseCouponUri, couponApplyUri } from '@/app_const.js';
 import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',

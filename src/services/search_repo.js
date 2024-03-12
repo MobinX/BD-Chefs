@@ -1,4 +1,4 @@
-import { searchUri, suggestedFoodUri, searchHistory } from './app_const.js';
+import { searchUri, suggestedFoodUri, searchHistory } from '@/app_const.js';
 import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',

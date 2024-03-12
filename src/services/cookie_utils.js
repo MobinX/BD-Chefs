@@ -14,26 +14,23 @@
 //   document.cookie = `${name}=${value || ''}${expires}; path=/`;
 // }
 
-import { token }  from "@/app_const";
+import { token } from "@/app_const";
 
 const headers = {
-  'Content-Type': 'application/json; charset=UTF-8',
-  'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-  'localizationKey': getCookie('languageCode') || '',
-  'latitude': JSON.stringify(getCookie('latitude') || ''),
-  'longitude': JSON.stringify(getCookie('longitude') || ''),
-  'Authorization': `Bearer ${getCookie('token') || ''}`
+  "Content-Type": "application/json; charset=UTF-8",
+  zoneId: JSON.stringify(getCookie("zoneId") || ""),
+  localizationKey: getCookie("languageCode") || "",
+  latitude: JSON.stringify(getCookie("latitude") || ""),
+  longitude: JSON.stringify(getCookie("longitude") || ""),
+  Authorization: `Bearer ${getCookie("token") || ""}`,
 };
-
-
-const dummydata = {
-  latitude: 23.810331,
-  longitude: 90.412521,
-  languageCode: "en",
-  token: token,
-  zoneId: 1
-}
-
-function getCookie(name) {
+export function getCookie(name) {
+  const dummydata = {
+    latitude: 23.810331,
+    longitude: 90.412521,
+    languageCode: "en",
+    token: token,
+    zoneId: 1,
+  };
   return dummydata[name];
 }

@@ -1,4 +1,4 @@
-import { addressListUri, zoneUri, removeAddressUri, addAddressUri, updateAddressUri, geocodeUri, searchLocationUri, placeDetailsUri } from './app_const.js';
+import { addressListUri, zoneUri, removeAddressUri, addAddressUri, updateAddressUri, geocodeUri, searchLocationUri, placeDetailsUri } from '@/app_const.js';
 import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',

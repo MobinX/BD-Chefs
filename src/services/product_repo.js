@@ -3,7 +3,7 @@ import {
   reviewedProductUri,
   reviewUri,
   deliveryManReviewUri,
-} from "./app_const.js";
+} from "@/app_const.js";
 import { getCookie } from "./cookie_utils.js";
 
 const headers = {
