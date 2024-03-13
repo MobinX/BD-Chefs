@@ -6,15 +6,15 @@ import {
 } from "@/app_const.js";
 import { getCookie } from "./cookie_utils.js";
 
-const headers = {
-  "Content-Type": "application/json; charset=UTF-8",
-  zoneId: JSON.stringify(getCookie("zoneId") || ""),
-  X-localization: getCookie("languageCode") || "",
-  latitude: JSON.stringify(getCookie("latitude") || ""),
-  longitude: JSON.stringify(getCookie("longitude") || ""),
-  Authorization: `Bearer ${getCookie("token") || ""}`,
-};
 
+const headers = {
+  'Content-Type': 'application/json; charset=UTF-8',
+  'zoneId': JSON.stringify(getCookie('zoneId') || ''),
+  'X-localization': getCookie('languageCode') || '',
+  'latitude': JSON.stringify(getCookie('latitude') || ''),
+  'longitude': JSON.stringify(getCookie('longitude') || ''),
+  'Authorization': `Bearer ${getCookie('token') || ''}`
+};
 const getProductList = (type) => {
   return fetch(`${popularProductUri}?type=${type}`, { headers }).then(
     (response) => response.json()

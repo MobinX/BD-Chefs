@@ -8,9 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-body,html{
-  height: 100vh;
-}
+
 
 .scrollbar-hide::-webkit-scrollbar {
     display: none;

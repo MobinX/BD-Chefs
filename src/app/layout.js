@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scrollbar-hide">
+    <html lang="en" className="scrollbar-hide h-full min-h-full">
       <body className={` $(inter.className) w-full h-full min-w-full scrollbar-hide min-h-full`}>
         <Navbar />
         {children}
