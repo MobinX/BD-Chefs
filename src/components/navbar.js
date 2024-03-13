@@ -21,7 +21,7 @@ import Image from "next/image";
 export const Navbar = () => {
    const pathname = usePathname();
    return (<>
-      <div className="row  space-x-3 w-full min-w-full hidden md:row  p-1">
+      <div className="row fixed top-0 mb-20 bg-white shadow-xl z-50 space-x-3 w-full min-w-full hidden md:row  p-1 px-8">
          <div className="row space-x-1">
             <Link href="/"><Image src="/logo.png" alt="BD Chefs" width={50} height={50} /></Link>
             <Link href="/pick-map">

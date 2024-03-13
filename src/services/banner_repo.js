@@ -6,7 +6,7 @@ const getBannerList = async () => {
   const headers = {
     'Content-Type': 'application/json; charset=UTF-8',
     'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-    'localizationKey': getCookie('languageCode') || '',
+    'X-localization': getCookie('languageCode') || '',
     'latitude': JSON.stringify(getCookie('latitude') || ''),
     'longitude': JSON.stringify(getCookie('longitude') || ''),
     'Authorization': `Bearer ${getCookie('token') || ''}`

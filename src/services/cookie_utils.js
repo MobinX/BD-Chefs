@@ -19,18 +19,18 @@ import { token } from "@/app_const";
 const headers = {
   "Content-Type": "application/json; charset=UTF-8",
   zoneId: JSON.stringify(getCookie("zoneId") || ""),
-  localizationKey: getCookie("languageCode") || "",
+  "X-localization": getCookie("languageCode") || "",
   latitude: JSON.stringify(getCookie("latitude") || ""),
   longitude: JSON.stringify(getCookie("longitude") || ""),
   Authorization: `Bearer ${getCookie("token") || ""}`,
 };
 export function getCookie(name) {
   const dummydata = {
-    latitude: 23.810331,
-    longitude: 90.412521,
+    latitude: 23.76576576576577,
+    longitude: 90.42471638331648,
     languageCode: "en",
     token: token,
-    zoneId: 1,
+    zoneId: [1],
   };
   return dummydata[name];
 }

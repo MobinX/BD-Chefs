@@ -11,7 +11,7 @@ class AppClient {
         const header = {
             'Content-Type': 'application/json; charset=UTF-8',
             'zoneId': zoneIDs ? JSON.stringify(zoneIDs) : '',
-            'localizationKey': languageCode || languageCode,
+            'X-localization': languageCode || languageCode,
             'latitude': latitude ? JSON.stringify(latitude) : '',
             'longitude': longitude ? JSON.stringify(longitude) : '',
             'Authorization': `Bearer ${token}`

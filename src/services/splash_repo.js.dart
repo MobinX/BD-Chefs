@@ -82,7 +82,7 @@ class SplashRepo {
       headers: {
         'Content-Type': 'application/json; charset=UTF-8',
         'Accept': 'application/json',
-        AppConstants.localizationKey: Get.find<LocalizationController>().locale.languageCode,
+        AppConstants.X-localization: Get.find<LocalizationController>().locale.languageCode,
       },
     );
   }

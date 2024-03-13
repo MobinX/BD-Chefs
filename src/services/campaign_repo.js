@@ -4,7 +4,7 @@ import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',
   'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-  'localizationKey': getCookie('languageCode') || '',
+  'X-localization': getCookie('languageCode') || '',
   'latitude': JSON.stringify(getCookie('latitude') || ''),
   'longitude': JSON.stringify(getCookie('longitude') || ''),
   'Authorization': `Bearer ${getCookie('token') || ''}`
@@ -31,7 +31,7 @@ function getBasicCampaignList() {
   const headers = {
     'Content-Type': 'application/json; charset=UTF-8',
     'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-    'localizationKey': getCookie('languageCode') || '',
+    'X-localization': getCookie('languageCode') || '',
     'latitude': JSON.stringify(getCookie('latitude') || ''),
     'longitude': JSON.stringify(getCookie('longitude') || ''),
     'Authorization': `Bearer ${getCookie('token') || ''}`
@@ -45,7 +45,7 @@ function getCampaignDetails( campaignID) {
   const headers = {
     'Content-Type': 'application/json; charset=UTF-8',
     'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-    'localizationKey': getCookie('languageCode') || '',
+    'X-localization': getCookie('languageCode') || '',
     'latitude': JSON.stringify(getCookie('latitude') || ''),
     'longitude': JSON.stringify(getCookie('longitude') || ''),
     'Authorization': `Bearer ${getCookie('token') || ''}`
@@ -59,7 +59,7 @@ function getItemCampaignList() {
   const headers = {
     'Content-Type': 'application/json; charset=UTF-8',
     'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-    'localizationKey': getCookie('languageCode') || '',
+    'X-localization': getCookie('languageCode') || '',
     'latitude': JSON.stringify(getCookie('latitude') || ''),
     'longitude': JSON.stringify(getCookie('longitude') || ''),
     'Authorization': `Bearer ${getCookie('token') || ''}`

@@ -11,7 +11,7 @@ export const BottomNav = () => {
     const pathname = heads.get('next-url')
 
     return(<>
-    <div className="flex flex-row md:hidden justify-around  w-full shadow-md">
+    <div className="flex flex-row fixed bottom-0 md:hidden justify-around bg-white w-full shadow-md">
 
         <Link href="/"><button className="btn btn-ghost btn-circle "><HomeIcon className="w-6 h-6" /></button></Link>
         <Link href="/favourite"><button className="btn btn-ghost btn-circle "><HeartIcon className="w-6 h-6" /></button></Link>

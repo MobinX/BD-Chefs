@@ -3,14 +3,14 @@ import { getCookie } from './cookie_utils.js';
 const headers = {
   'Content-Type': 'application/json; charset=UTF-8',
   'zoneId': JSON.stringify(getCookie('zoneId') || ''),
-  'localizationKey': getCookie('languageCode') || '',
+  'X-localization': getCookie('languageCode') || '',
   'latitude': JSON.stringify(getCookie('latitude') || ''),
   'longitude': JSON.stringify(getCookie('longitude') || ''),
   'Authorization': `Bearer ${getCookie('token') || ''}`
 };
 
 function getCategoryList() {
-  return fetch(categoryUri, { headers }).then(response => response.json());
+  return fetch(categoryUri,{headers}).then(response => response.json());
 }
 
 function getSubCategoryList(parentID) {
