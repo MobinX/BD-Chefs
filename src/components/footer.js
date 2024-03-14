@@ -12,8 +12,8 @@ export const Footer = () => {
                 <button className="btn btn-primary btn-sm p-1 rounded-r-full rounded-l-full"> subscribe</button>
             </div>
             <div className="flex flex-row space-x-4">
-                <Link href="https://facebook.com/bdchefs" ><div className="rounded-full w-6 h-6 "><Image src="/facebook.png" width={50} height={50} /></div></Link>
-                <Link href="https://www.linkedin.com/company/bdchefs" ><div className="rounded-full w-6 h-6 "><Image src="/linkedin.png" width={50} height={50} /></div></Link>
+                <Link href="https://facebook.com/bdchefs" ><div className="rounded-full w-6 h-6 "><Image src="/facebook.png" width={50} height={50} alt="facebook logo"/></div></Link>
+                <Link href="https://www.linkedin.com/company/bdchefs" ><div className="rounded-full w-6 h-6 "><Image src="/linkedin.png" width={50} height={50} alt="LinkedIn logo"/></div></Link>
                 
                 </div>
         </div>

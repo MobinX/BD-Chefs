@@ -25,7 +25,7 @@ export default async function Home() {
     <div className="flex flex-col space-y-14 bg-gray-100 w-full pt-16 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-w-full">
       {/* Category */}
       <div className="mx-2">
-        <h1 className="text-lg font-bold my-2"> What's on your mind ? </h1>
+        <h1 className="text-lg font-bold my-2"> {"What's on your mind ?"} </h1>
         <div className="flex flex-row overflow-x-scroll scrollbar-hide space-x-4 justify-between">
           {catagories.map((catagory, ind) => (
             <div className="" key={ind}>
@@ -98,7 +98,7 @@ export default async function Home() {
     
               <Link href={"/restaurant/" + chef.id} key={ind}>
                <div className="flex flex-col rounded-md shadow-lg w-64 bg-white">
-                <Image src={chef.cover_photo != null ? "https://bdchefs.com/storage/app/public/restaurant/cover/" + chef.cover_photo : "/image/placeholder.png"} alt={chef.name} width={500} height={250} className="rounded-lg w-full h-28 max-w-none  relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-full before:h-28" />" 
+                <Image src={chef.cover_photo != null ? "https://bdchefs.com/storage/app/public/restaurant/cover/" + chef.cover_photo : "/image/placeholder.png"} alt={chef.name} width={500} height={250} className="rounded-lg w-full h-28 max-w-none  relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-full before:h-28" />
 
                 {"Info container"}
                 <div className="flex flex-row  bg-white -mt-[13%] relative rounded-bl-md rounded-br-md w-full h-[90]">
