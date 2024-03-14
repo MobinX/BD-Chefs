@@ -55,7 +55,7 @@ export default async function Home() {
         <h1 className="text-lg font-bold my-2 flex flex-row justify-between">
           {" "}
           Cuisine
-          <Link href="/cuisine">
+          <Link href="/cuisines">
             <button className="btn btn-sm btn-circle bg-white text-[#cc0c62]">
               <ArrowRightIcon className="w-5 h-5" />
             </button>
@@ -129,7 +129,7 @@ export default async function Home() {
       {/* Latest Cheif */}
       <div className="mx-2 p-2 before: px-7 rounded-md bg-[#dfcad4d0]">
         <div className="flex flex-row justify-between my-5"> <h1 className="text-lg font-bold my-2 flex flex-row items-center justify-center w-full"> New on BD Cheifs </h1>
-        <Link href="/restaurants">
+        <Link href="/restaurant?types=latest">
             <button className="btn btn-sm btn-circle bg-white text-[#cc0c62]">
               <ArrowRightIcon className="w-5 h-5" />
             </button>

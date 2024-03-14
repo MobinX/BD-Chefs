@@ -34,9 +34,9 @@ export const Navbar = () => {
 
          <ul className="row space-x-3">
             <li className=""><Link href="/" ><button className="btnx-ghost ">Home</button></Link></li>
-            <li className=""><Link href="/" ><button className="btnx-ghost">Catagories</button></Link></li>
-            <li className=""><Link href="/" ><button className="btnx-ghost">Cuisines</button></Link></li>
-            <li className=""><Link href="/" ><button className="btnx-ghost">Chefs</button></Link></li>
+            <li className=""><Link href="/categories" ><button className="btnx-ghost">Catagories</button></Link></li>
+            <li className=""><Link href="/cuisines" ><button className="btnx-ghost">Cuisines</button></Link></li>
+            <li className=""><Link href="/restaurant" ><button className="btnx-ghost">Chefs</button></Link></li>
          </ul>
          <div className="row space-x-1">
             <Link href="/signin" ><button className="btnx-ghost row"><LockClosedIcon className="w-4 h-4" /> Sign In</button></Link>

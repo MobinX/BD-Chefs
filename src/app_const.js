@@ -4,7 +4,7 @@
 
   export const  fontFamily = 'Roboto';
   export const  payInWevView = false;
-  export const  webHostedUrl = 'https://stackfood-web.6amtech.com';
+  export const  webHostedUrl = 'https://bdchefs.com';
 
   export const  baseUrl = 'https://bdchefs.com';
   export const  categoryUri = 'https://bdchefs.com/api/v1/categories';
