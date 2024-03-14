@@ -19,7 +19,7 @@ export default async function Page({ params, query }) {
         <p className="font-bold"> Cuisines </p>
       </div>
 
-      <div className="grid grid-cols-1 items-center justify-center md:grid-cols-2 lg:grid-cols-3  gap-4">
+      <div className="grid grid-cols-2 items-center justify-center md:grid-cols-2 lg:grid-cols-3  gap-4">
       {cuisines["Cuisines"].map((cuisine, ind) => (
             <div className="" key={ind}>
               <Link href={"/cuisine-restaurant/" + cuisine.id}>
