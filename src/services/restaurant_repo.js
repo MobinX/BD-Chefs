@@ -47,17 +47,11 @@ const getLatestRestaurantList = async (type) => {
   return response.json();
 };
 
-const getRestaurantDetails = async (restaurantID, slug) => {
-  let header = null;
-  if (slug !== "") {
-    header = {
-      ...headers,
-      "Accept-Language": getCookie("languageCode"),
-    };
-  }
+const getRestaurantDetails = async (restaurantID, slug="") => {
+
   const response = await fetch(
     `${restaurantDetailsUri}${slug !== "" ? slug : restaurantID}`,
-    { headers: header }
+    { headers}
   );
   return response.json();
 };

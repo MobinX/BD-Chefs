@@ -16,7 +16,7 @@ export default async function Page({ params, query }) {
   const searchParams = url.searchParams;
   const types = searchParams.get("types");
   let list = await getCuisineRestaurantList(1,params.id);
-    console.log(list);
+   
 
   return (
     <div className="flex flex-col space-y-7 bg-white w-full pt-8 md:pt-20 px-6 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full">
