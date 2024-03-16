@@ -55,7 +55,7 @@ export default async function Page({ params, query }) {
         {list[`${types == "chefs" ? "restaurants" : "products"}`].map(
           (item, ind) => (
             <Link
-              href={`${types == "chefs" ? "restaurant" : "product"}` + item.id}
+              href={`${types == "chefs" ? "/restaurant/" : "/product/"}` + item.id}
               key={ind}
             >
               {/*Info container*/}
