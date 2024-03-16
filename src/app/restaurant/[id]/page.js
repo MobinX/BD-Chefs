@@ -17,7 +17,7 @@ export default async function Page({ params, query }) {
   console.log
   return (
     <div className="flex flex-col items-center justify-center relative bg-white w-full -mt-[115px] md:mt-0 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full " >
-      <div className="overflow-hidden rounded-3xl w-full h-[250px] -mt-[385px] md:-mt-[275px]">  <Image
+      <div className="overflow-hidden rounded-3xl w-full h-[250px] -mt-[150px] md:-mt-[275px]">  <Image
                     src={
                       (details.cover_photo != null) 
                         ? `https://bdchefs.com/storage/app/public/restaurant/cover/` + `${details.cover_photo}`
@@ -28,9 +28,9 @@ export default async function Page({ params, query }) {
                     height={500}
                     className="rounded-lg mr-4 ml-1 w-full h-[330px] bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-full before:h-full "
                   />    </div>
-<div className="flex flex-row  bg-white  relative rounded-bl-md rounded-br-md w-[85%] md:w-[90%] -mt-[40px] rounded-2xl shadow-xl py-6">
+<div className="flex flex-row  bg-white items-center   relative rounded-bl-md rounded-br-md w-[85%] md:w-[90%] -mt-[40px] rounded-2xl shadow-xl py-6">
                   <div className="p-[3px] bg-white rounded-md  mx-3  max-w-none">
-                  <Image src={details.logo != null ? "https://bdchefs.com/storage/app/public/restaurant/" + details.logo : "/image/placeholder.png"} alt="" width={500} height={500} className="rounded w-12 h-12  bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-12 before:h-12" />
+                  <Image src={details.logo != null ? "https://bdchefs.com/storage/app/public/restaurant/" + details.logo : "/image/placeholder.png"} alt="" width={500} height={500} className="rounded w-36 h-36  bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-12 before:h-12" />
 
                   </div>
 
