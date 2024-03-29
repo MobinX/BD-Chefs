@@ -65,14 +65,14 @@ export default async function Page({ params, query }) {
 
                   <div className="flex flex-row space-x-2 items-center font-extrabold">
                     <div className="flex flex-row items-center">
-                      <StarIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62] ">
+                      <StarIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary ">
                         {parseFloat(item.avg_rating)}
                       </p>
                     </div>
                 
                     {item.minimum_order ? (
-                      <p className="text-xs text-[#cc0c62]">
+                      <p className="text-xs text-primary">
                         Starting from {shortTitle(item.minimum_order, 15)} ৳{" "}
                       </p>
                     ) : (

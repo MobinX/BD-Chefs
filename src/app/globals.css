@@ -44,7 +44,7 @@
 
 @layer components{
  .btnx-ghost{
-  @apply btn btn-ghost hover:text-[#cc0c62]
+  @apply btn btn-ghost hover:text-primary
  }
  .row{
   @apply flex flex-row justify-around space-x-3

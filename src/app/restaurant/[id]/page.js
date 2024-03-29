@@ -74,27 +74,27 @@ export default async function Page({ params, query }) {
           </p>
           <p className="text-xs flex flex-row space-x-1 text-gray-500">
             <span>Starting at </span>{" "}
-            <span className="text-[#cc0c62]">
+            <span className="text-primary">
               {" "}
               {shortTitle(details.minimum_order, 150)}৳{" "}
             </span>
           </p>
           <div className="flex flex-row justify-between items-center mt-4 font-extrabold">
             <div className="flex flex-row items-center justify-between">
-              <ClockIcon className="w-5 h-5 text-[#cc0c62] mr-1" />
-              <p className="text-sm text-[#cc0c62]">{details.delivery_time}</p>
+              <ClockIcon className="w-5 h-5 text-primary mr-1" />
+              <p className="text-sm text-primary">{details.delivery_time}</p>
             </div>
             <Link
               href={`/map?lat=${details.latitude}&long=${details.longitude}`}
             >
               <div className="flex flex-row items-center">
-                <MapPinIcon className="w-5 h-5 text-[#cc0c62] mr-1" />
-                <p className="text-sm text-[#cc0c62] ">Location</p>
+                <MapPinIcon className="w-5 h-5 text-primary mr-1" />
+                <p className="text-sm text-primary ">Location</p>
               </div>
             </Link>
             <div className="flex flex-row items-center">
-              <StarIcon className="w-5 h-5 text-[#cc0c62] mr-1" />
-              <p className="text-sm text-[#cc0c62] ">
+              <StarIcon className="w-5 h-5 text-primary mr-1" />
+              <p className="text-sm text-primary ">
                 {parseFloat(details.avg_rating)}
               </p>
             </div>
@@ -112,7 +112,7 @@ export default async function Page({ params, query }) {
 
       <div className="flex flex-row justify-between items-center  my-4 w-full mx-6">
         <div className="flex flex-row items-center space-x-2 font-bold w-full">ALL </div>
-        <MagnifyingGlassIcon className="w-6 h-6 text-[#cc0c62] " />
+        <MagnifyingGlassIcon className="w-6 h-6 text-primary " />
       </div>
       <div className="grid grid-cols-1 mx-6 items-center w-full justify-center md:grid-cols-2 lg:grid-cols-3  gap-4">
         {items.map((item, ind) => (
@@ -152,20 +152,20 @@ export default async function Page({ params, query }) {
 
                 <div className="flex flex-row space-x-2 items-center font-extrabold">
                   <div className="flex flex-row items-center">
-                    <StarIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                    <p className="text-xs text-[#cc0c62] ">
+                    <StarIcon className="w-5 h-5 text-primary mr-2" />
+                    <p className="text-xs text-primary ">
                       {parseFloat(item.avg_rating)}
                     </p>
                   </div>
                   {item.price ? (
-                    <p className="text-xs text-[#cc0c62]">
+                    <p className="text-xs text-primary">
                       {shortTitle(item.price, 15)} ৳{" "}
                     </p>
                   ) : (
                     ""
                   )}
                   {item.minimum_order ? (
-                    <p className="text-xs text-[#cc0c62]">
+                    <p className="text-xs text-primary">
                       Starting from {shortTitle(item.minimum_order, 15)} ৳{" "}
                     </p>
                   ) : (

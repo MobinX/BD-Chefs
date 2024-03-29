@@ -15,7 +15,7 @@ export const BottomNav = () => {
 
         <Link href="/"><button className="btn btn-ghost btn-circle "><HomeIcon className="w-6 h-6" /></button></Link>
         <Link href="/favourite"><button className="btn btn-ghost btn-circle "><HeartIcon className="w-6 h-6" /></button></Link>
-        <Link href="/cart"><button className="btn btn-xl btn-white bg-gray-100 btn-circle -translate-y-[40%]"><ShoppingCartIcon className="w-6 h-6" /></button></Link>
+        <Link href="/cart"><button className="btn btn-xl btn-white bg-base-200 btn-circle -translate-y-[40%]"><ShoppingCartIcon className="w-6 h-6" /></button></Link>
         <Link href="/bag"><button className="btn btn-ghost btn-circle shadow-md"><ShoppingBagIcon className="w-6 h-6" /></button></Link>
 
         <Link href="/menu"><button className="btn btn-ghost btn-circle "><Bars3Icon className="w-6 h-6" /></button></Link>

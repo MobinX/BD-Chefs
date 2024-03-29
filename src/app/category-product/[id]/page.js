@@ -31,7 +31,7 @@ export default async function Page({ params, query }) {
           <button
             className={`btn btn-ghost ${
               types != "chefs"
-                ? "text-[#cc0c62] border-b-2 border-b-[#cc0c62]"
+                ? "text-primary border-b-2 border-b-primary"
                 : ""
             }`}
           >
@@ -42,7 +42,7 @@ export default async function Page({ params, query }) {
           <button
             className={`btn btn-ghost ${
               types == "chefs"
-                ? "text-[#cc0c62] border-b-2 border-b-[#cc0c62]"
+                ? "text-primary border-b-2 border-b-primary"
                 : ""
             }`}
           >
@@ -97,20 +97,20 @@ export default async function Page({ params, query }) {
 
                   <div className="flex flex-row space-x-2 items-center font-extrabold">
                     <div className="flex flex-row items-center">
-                      <StarIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62] ">
+                      <StarIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary ">
                         {parseFloat(item.avg_rating)}
                       </p>
                     </div>
                     {item.price ? (
-                      <p className="text-xs text-[#cc0c62]">
+                      <p className="text-xs text-primary">
                         {shortTitle(item.price, 15)} ৳{" "}
                       </p>
                     ) : (
                       ""
                     )}
                     {item.minimum_order ? (
-                      <p className="text-xs text-[#cc0c62]">
+                      <p className="text-xs text-primary">
                         Starting from {shortTitle(item.minimum_order, 15)} ৳{" "}
                       </p>
                     ) : (

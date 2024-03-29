@@ -26,7 +26,7 @@ export const Navbar = () => {
             <Link href="/"><Image src="/logo.png" alt="BD Chefs" width={50} height={50} /></Link>
             <Link href="/pick-map">
                <div className="flex flex-col px-3 mt-1">
-                  <p className="flex flex-row text-sm text-[#cc0c62]"> <MapPinIcon className="h-5 w-5 mx-1" /> Other </p>
+                  <p className="flex flex-row text-sm text-primary100"> <MapPinIcon className="h-5 w-5 mx-1" /> Other </p>
                   <p className="row text-sm  space-x-4">Riazbag, Khilgaon, Dhaka <ChevronDownIcon className="ml-2 text-bold w-4 h-4 " /></p>
                </div>
             </Link>
@@ -39,8 +39,8 @@ export const Navbar = () => {
             <li className=""><Link href="/restaurant" ><button className="btnx-ghost">Chefs</button></Link></li>
          </ul>
          <div className="row space-x-1">
-            <Link href="/signin" ><button className="btnx-ghost row"><LockClosedIcon className="w-4 h-4" /> Sign In</button></Link>
-            <Link href="/signup" ><button className="btnx-ghost row"><UserIcon className="w-4 h-4" /> Sign In</button></Link>
+            <Link href="/login" ><button className="btnx-ghost row"><LockClosedIcon className="w-4 h-4" /> Sign In</button></Link>
+            <Link href="/login" ><button className="btnx-ghost row"><UserIcon className="w-4 h-4" /> Sign In</button></Link>
 
          </div>
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
          </div>
 
       </div>
-      <div className="flex flex-col items-center h-28  w-full min-w-full   md:hidden bg-[#cc0c62] text-white p-1">
+      <div className="flex flex-col items-center h-28  w-full min-w-full   md:hidden bg-primary text-white p-1">
          <div className="row  w-full translate-y-5 justify-between">
             <Link href="/pick-map">
                <div className="flex flex-col px-3 mt-1">
@@ -62,12 +62,12 @@ export const Navbar = () => {
                   <p className="row text-sm  space-x-4 text-white">Riazbag, Khilgaon, Dhaka <ChevronDownIcon className="ml-2 text-bold w-4 h-4 " /></p>
                </div>
             </Link>
-            <Link href="/notification" ><button className="btnx-ghost btn-sm p-3 bg-white hover:text-white"><BellIconOut className="w-5 h-5  text-[#cc0c62] hover:text-white" /></button></Link>
+            <Link href="/notification" ><button className="btnx-ghost btn-sm p-3 bg-white hover:text-white"><BellIconOut className="w-5 h-5  text-primary hover:text-white" /></button></Link>
          </div>
 
          <div className="row  justify-between w-[90%] bg-white translate-y-[80%] -mt-3 rounded-full">
-            <button className="btn btn-ghost btn-circle p-3 bg-white hover:text-white"><MagnifyingGlassIcon className="w-5 h-5  text-[#cc0c62] " /></button>
-            <input type="text" className="w-full p-2 rounded-full focus:bottom-0 focus:outline-none focus-visible:outline-none text-[#cc0c62]" placeholder="Search for food, cuisines, chefs" />
+            <button className="btn btn-ghost btn-circle p-3 bg-white hover:text-white"><MagnifyingGlassIcon className="w-5 h-5  text-primary " /></button>
+            <input type="text" className="w-full p-2 rounded-full focus:bottom-0 focus:outline-none focus-visible:outline-none text-primary" placeholder="Search for food, cuisines, chefs" />
          </div>
       </div>
    </>

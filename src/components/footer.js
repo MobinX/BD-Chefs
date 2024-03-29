@@ -23,31 +23,31 @@ export const Footer = () => {
 
             <div className="flex flex-col space-y-1 text-slate-200/85">
                 <p className="text-bold text-white mb-2">About</p>
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">About us</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">About us</p></Link>
 
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Find Store</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Find Store</p></Link>
 
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Catagories</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Catagories</p></Link>
 
 
             </div>
 
             <div className="flex flex-col space-y-1 text-slate-200/85">
                 <p className="text-bold text-white mb-2">Quick Link</p>
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Cancellation Policy</p></Link>
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Privacy Policy</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Cancellation Policy</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Privacy Policy</p></Link>
 
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Terms and Condition</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Terms and Condition</p></Link>
 
 
             </div>
 
             <div className="flex flex-col space-y-1 text-slate-200/85">
                 <p className="text-bold text-white mb-2">For users</p>
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Help Desk</p></Link>
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Live Chat</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Help Desk</p></Link>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Live Chat</p></Link>
 
-                <Link href=""><p className="text-bold text-xs hover:text-[#cc0c62]">Log In</p>
+                <Link href=""><p className="text-bold text-xs hover:text-primary">Log In</p>
                 </Link>
 
             </div>

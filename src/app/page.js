@@ -22,7 +22,7 @@ export default async function Home() {
   let latestRestaurant = await getLatestRestaurantList("all");
 
   return (
-    <div className="flex flex-col space-y-14 bg-gray-100 w-full pt-16 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-w-full">
+    <div className="flex flex-col space-y-14 bg-base-200 w-full pt-16 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-w-full">
       {/* Category */}
       <div className="mx-2">
         <h1 className="text-lg font-bold my-2"> {"What's on your mind ?"} </h1>
@@ -56,7 +56,7 @@ export default async function Home() {
           {" "}
           Cuisine
           <Link href="/cuisines">
-            <button className="btn btn-sm btn-circle bg-white text-[#cc0c62]">
+            <button className="btn btn-sm btn-circle bg-white text-primary">
               <ArrowRightIcon className="w-5 h-5" />
             </button>
           </Link>
@@ -110,12 +110,12 @@ export default async function Home() {
                     <p className="text-sm font-bold">{shortTitle(chef.name, 20)}</p>
                     <p className="text-xs text-gray-800">{shortTitle(chef.address, 15)}</p>
                     <div className="flex flex-row space-x-2 items-center font-extrabold">
-                      <div className="flex flex-row items-center"><StarIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62] ">{parseFloat(chef.avg_rating)}</p></div>
+                      <div className="flex flex-row items-center"><StarIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary ">{parseFloat(chef.avg_rating)}</p></div>
                       <div className="flex flex-row items-center">
-                      <ClockIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62]">{chef.delivery_time}</p></div>
-                      <p className="text-xs text-[#cc0c62] bg-white rounded-md px-1 py-[4px] -translate-y-[70px]">{convertMeterToKm(chef.distance)}</p>
+                      <ClockIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary">{chef.delivery_time}</p></div>
+                      <p className="text-xs text-primary bg-white rounded-md px-1 py-[4px] -translate-y-[70px]">{convertMeterToKm(chef.distance)}</p>
                     </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ export default async function Home() {
       <div className="mx-2 p-2 before: px-7 rounded-md bg-[#dfcad4d0]">
         <div className="flex flex-row justify-between my-5"> <h1 className="text-lg font-bold my-2 flex flex-row items-center justify-center w-full"> New on BD Cheifs </h1>
         <Link href="/restaurant?types=latest">
-            <button className="btn btn-sm btn-circle bg-white text-[#cc0c62]">
+            <button className="btn btn-sm btn-circle bg-white text-primary">
               <ArrowRightIcon className="w-5 h-5" />
             </button>
           </Link>
@@ -152,12 +152,12 @@ export default async function Home() {
                     <p className="text-sm font-bold">{shortTitle(chef.name, 20)}</p>
                     <p className="text-xs text-gray-800">{shortTitle(chef.address, 15)}</p>
                     <div className="flex flex-row space-x-2 items-center font-extrabold">
-                      <div className="flex flex-row items-center"><StarIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62] ">{parseFloat(chef.avg_rating)}</p></div>
+                      <div className="flex flex-row items-center"><StarIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary ">{parseFloat(chef.avg_rating)}</p></div>
                       <div className="flex flex-row items-center">
-                      <ClockIcon className="w-5 h-5 text-[#cc0c62] mr-2" />
-                      <p className="text-xs text-[#cc0c62]">{chef.delivery_time}</p></div>
-                      <p className="text-xs text-[#cc0c62] bg-white rounded-md px-1 py-[4px] ">{convertMeterToKm(chef.distance)}</p>
+                      <ClockIcon className="w-5 h-5 text-primary mr-2" />
+                      <p className="text-xs text-primary">{chef.delivery_time}</p></div>
+                      <p className="text-xs text-primary bg-white rounded-md px-1 py-[4px] ">{convertMeterToKm(chef.distance)}</p>
                     </div>
                     
                 </div>
