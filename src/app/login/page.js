@@ -151,7 +151,7 @@ export default async function Page({ params, query }) {
         <p className="text-sm text-gray-600">*By continuing, you agree to our Terms of Service and Privacy Policy</p>
         <button className="btn btn-primary w-full mt-4">Login</button>
         <div className="text-xs text-gray-500 mt-2 flex flex-row">
-          Don't have an account?
+          {"Don't have an account?"}
           <Link href="/login?new=true">
             <p className="text-primary">Register</p>
           </Link>
