@@ -23,7 +23,7 @@ export default async function Page({ params, query }) {
   }
   console.log(list);
   return (
-    <div className="flex flex-col space-y-7 bg-white w-full pt-8 md:pt-20 px-6 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full">
+    <div className="flex flex-col space-y-7 bg-base-100 w-full pt-8 md:pt-20 px-6 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full">
       <div className="flex flex-row space-x-4 w-full items-center justify-center md:justify-start mb-5">
         <p className="font-bold"> Cheifs </p>
       </div>
@@ -36,8 +36,8 @@ export default async function Page({ params, query }) {
               key={ind}
             >
               {/*Info container*/}
-              <div className="flex flex-row  items-center  relative w-full  rounded-lg shadow-xl p-2 bg-white">
-                <div className="px-1/2  bg-white rounded-lg max-w-none h-full">
+              <div className="flex flex-row  items-center  relative w-full  rounded-lg shadow-xl p-2 bg-base-100">
+                <div className="px-1/2  bg-base-100 rounded-lg max-w-none h-full">
                   <Image
                     src={
                       (item.logo != null) 
@@ -47,7 +47,7 @@ export default async function Page({ params, query }) {
                     alt=""
                     width={500}
                     height={500}
-                    className="rounded-lg mr-4 ml-1 w-24 h-24 bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-24 before:h-24 before:bg-[-53px 0px]"
+                    className="rounded-lg mr-4 ml-1 w-24 h-24 bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-24 before:h-24 before:bg-[-53px 0px]"
                   />
                 </div>
                 <div className="flex flex-col space-y-1 py-2 ">

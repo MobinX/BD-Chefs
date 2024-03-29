@@ -33,7 +33,7 @@ export default async function Page({ params, query }) {
   }
   console.log(items);
   return (
-    <div className="flex flex-col items-center justify-center relative bg-white w-full -mt-[115px] md:mt-0 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full ">
+    <div className="flex flex-col items-center justify-center relative bg-base-100 w-full -mt-[115px] md:mt-0 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full ">
       <div className="overflow-hidden rounded-br-3xl rounded-bl-3xl w-full h-[250px] -mt-[270px] md:-mt-[135px] lg:-mt-[245px]">
         {" "}
         <Image
@@ -46,11 +46,11 @@ export default async function Page({ params, query }) {
           alt=""
           width={500}
           height={500}
-          className="rounded-lg  w-full h-[350px] bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-full before:h-full "
+          className="rounded-lg  w-full h-[350px] bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-full before:h-full "
         />{" "}
       </div>
-      <div className="flex flex-row justify-between lg:justify-normal bg-white items-start py-3 pb-5  relative rounded-bl-md rounded-br-md w-[88%] md:w-[90%] -mt-[40px] rounded-2xl shadow-xl">
-        <div className="p-[3px] mt-[5px] md:h-auto items-center justify-center rounded-full shadow-[0px_0px_13px_1px_#cc0c62]  bg-white md:-mt-[68px]  mx-5  max-w-none">
+      <div className="flex flex-row justify-between lg:justify-normal bg-base-100 items-start py-3 pb-5  relative rounded-bl-md rounded-br-md w-[88%] md:w-[90%] -mt-[40px] rounded-2xl shadow-xl">
+        <div className="p-[3px] mt-[5px] md:h-auto items-center justify-center rounded-full shadow-[0px_0px_13px_1px_#cc0c62]  bg-base-100 md:-mt-[68px]  mx-5  max-w-none">
           <Image
             src={
               details.logo != null
@@ -61,7 +61,7 @@ export default async function Page({ params, query }) {
             alt=""
             width={500}
             height={500}
-            className="rounded-full w-20 h-20  md:w-48 md:h-44  bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-20 before:h-20 before:md:w-44 before:md:h-44"
+            className="rounded-full w-20 h-20  md:w-48 md:h-44  bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-contain before:bg-no-repeat before:w-20 before:h-20 before:md:w-44 before:md:h-44"
           />
         </div>
 
@@ -118,8 +118,8 @@ export default async function Page({ params, query }) {
         {items.map((item, ind) => (
           <Link href={"/product/" + item.id} key={ind}>
             {/*Info container*/}
-            <div className="flex flex-row  items-center  relative w-full  rounded-lg shadow-xl p-2 bg-white">
-              <div className="px-1/2  bg-white rounded-lg max-w-none h-full">
+            <div className="flex flex-row  items-center  relative w-full  rounded-lg shadow-xl p-2 bg-base-100">
+              <div className="px-1/2  bg-base-100 rounded-lg max-w-none h-full">
                 <Image
                   src={
                     item.image != null
@@ -130,7 +130,7 @@ export default async function Page({ params, query }) {
                   alt=""
                   width={500}
                   height={500}
-                  className="rounded-lg mr-4 ml-1 w-24 h-24 bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-24 before:h-24 before:bg-[-53px 0px]"
+                  className="rounded-lg mr-4 ml-1 w-24 h-24 bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-24 before:h-24 before:bg-[-53px 0px]"
                 />
               </div>
               <div className="flex flex-col space-y-1 py-2 ">

@@ -37,7 +37,7 @@ export default async function Page({ params, query }) {
                     height={500}
                     className="rounded-full w-24 translate-y-4 -z-0 h-24  max-w-none"
                   />
-                  <p className="text-sm relative font-bold flex z-10 flex-row py-1 items-center justify-center  bg-white rounded-bl-lg rounded-br-lg">
+                  <p className="text-sm relative font-bold flex z-10 flex-row py-1 items-center justify-center  bg-base-100 rounded-bl-lg rounded-br-lg">
                     {shortTitle(cuisine.name, 15)}
                   </p>
                 </div>

@@ -20,7 +20,7 @@ export default async function Page({ params, query }) {
 
 
   return (
-    <div className="flex flex-col space-y-7 bg-white w-full pt-8 md:pt-20 px-6 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full">
+    <div className="flex flex-col space-y-7 bg-base-100 w-full pt-8 md:pt-20 px-6 md:px-10 pb-14 overflow-y-scroll scrollbar-hide h-full min-h-full min-w-full">
       <div className="flex flex-row space-x-4 w-full items-center justify-center md:justify-start mb-5">
         <p className="font-bold"> Cuisines </p>
       </div>
@@ -33,7 +33,7 @@ export default async function Page({ params, query }) {
               key={ind}
             >
               {/*Info container*/}
-              <div className="rounded-lg p-2 flex flex-col items-center justify-center m-4 bg-white hover:bg-gray-400 shadow-lg  ">
+              <div className="rounded-lg p-2 flex flex-col items-center justify-center m-4 bg-base-100 hover:bg-gray-400 shadow-lg  ">
               <Image
                     src={
                         "https://bdchefs.com/storage/app/public/category/" +
@@ -42,7 +42,7 @@ export default async function Page({ params, query }) {
                     alt={catagory.name}
                     width={500}
                     height={500}
-                    className="rounded-lg mx-1 my-3 w-24 h-24 bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-16 before:h-16 before:bg-[-53px 0px]"
+                    className="rounded-lg mx-1 my-3 w-24 h-24 bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-16 before:h-16 before:bg-[-53px 0px]"
                   />
                   <p className="text-xs font-bold">
                     {shortTitle(catagory.name, 26)}
@@ -58,7 +58,7 @@ export default async function Page({ params, query }) {
                     alt=""
                     width={500}
                     height={500}
-                    className="rounded-lg mr-4 ml-1 w-36 h-36 bg-white  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-16 before:h-16 before:bg-[-53px 0px]"
+                    className="rounded-lg mr-4 ml-1 w-36 h-36 bg-base-100  max-w-none relative  before:absolute before:top-0 before:left-0 before:bg-[url('/image/placeholder.jpg')] before:bg-cover before:bg-no-repeat before:w-16 before:h-16 before:bg-[-53px 0px]"
                   /><p className="text-lg text-gray-600 font-bold">No restaurant found</p>
               </div>
 
