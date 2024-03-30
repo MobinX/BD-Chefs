@@ -16,6 +16,7 @@ export default async function Page({ params, query }) {
   const url = new URL(headers().get("x-url"));
   const searchParams = url.searchParams;
   const types = searchParams.get("types");
+  console.log(params.id);
   let list = [];
   if (types == "chefs") {
     list = await getCategoryRestaurantList(params.id, 1, "all");
